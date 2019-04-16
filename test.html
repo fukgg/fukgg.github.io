@@ -1,10 +1,5 @@
 <html>
-<body><h1 id='test'>aaaaaa</h1>
-<script>
-x = new XMLHttpRequest();
-x.open('GET', 'file:///etc/passwd', false);
-x.send();
-document.getElementById('test').innerHTML = x.responseText;
-</script>
+<body>
+  <p id="test">aa</p><script>document.getElementById('test').innerHTML+='aa'</script>
 </body>
 </html>
